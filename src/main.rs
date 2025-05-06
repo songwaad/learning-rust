@@ -1,11 +1,6 @@
 fn main() {
-    let mut s = String::from("Hello");
-    s.push_str(", world!");
+    let arr: [i32; 5] = [1, 2, 3, 4, 5];
+    let slice: &[i32] = &arr[0..3];
 
-    let greeting: &str = "Hello, Rust!";
-
-    println!("{}",s);
-    println!("{}", greeting);
-
-
+    println!("slice : {}",slice[2]);
 }
