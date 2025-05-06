@@ -1,9 +1,11 @@
 fn main() {
-    let tup:(i32, f64, char) = (50, 6.4, 'a');
-    let (x, y, z) = tup;
-    println!("Tuple : {}, {}, {}", x , y, tup.2);
+    let mut s = String::from("Hello");
+    s.push_str(", world!");
 
-    let arr:[i32; 3] = [1, 2, 3];
-    println!("Array : {}", arr[1]);
+    let greeting: &str = "Hello, Rust!";
+
+    println!("{}",s);
+    println!("{}", greeting);
+
 
 }
