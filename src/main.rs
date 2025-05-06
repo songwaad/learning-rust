@@ -1,10 +1,16 @@
 fn main() {
-    // immutable
-    let x = 5;
-    println!("x : {}", x);
+    let a:i32 = -1;
+    let b:u8 = 8;
+    println!("a : {}", a);
+    println!("b : {}", b);
 
-    // mutable
-    let mut y = 10;
-    y = 15;
-    println!("y : {}", y);
+    let pi:f32 = 3.14;
+    println!("pi : {}", pi);
+
+    let okay:bool = false;
+    println!("okay : {}", okay);
+
+    let c:char = 'b';
+    println!("c : {}", c);
+
 }
