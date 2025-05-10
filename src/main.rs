@@ -1,14 +1,11 @@
 fn main() {
-    let a:u16 = 2;
-    let b:u16 = 3;
+    let mut x:u16 = 5;
 
-    let result_and:u16 = a & b;
-    let result_or:u16 = a | b;
-    let result_xor:u16 = a ^ b;
+    x += 2;
+    println!("{}", x);
 
-    println!("{}", result_and);
-    println!("{}", result_or);
-    println!("{}", result_xor);
+    x *= 3;
+    println!("{}", x);
 
 
 }
