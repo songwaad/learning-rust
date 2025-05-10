@@ -1,11 +1,13 @@
 fn main() {
-    let mut x:u16 = 5;
+    for i in 0..5 {
+        println!("{}", i);
+    }
 
-    x += 2;
-    println!("{}", x);
+    println!("Break...");
 
-    x *= 3;
-    println!("{}", x);
+    for i in 0..=5 {
+        println!("{}", i);
+    }
 
 
 }
