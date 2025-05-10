@@ -1,6 +1,11 @@
 fn main() {
-    let arr: [i32; 5] = [1, 2, 3, 4, 5];
-    let slice: &[i32] = &arr[0..3];
+    let mut v = Vec::new();
+    v.push('a');
+    v.push('b');
 
-    println!("slice : {}",slice[2]);
+    for i in &v {
+        print!("{}", i);
+    }
+
+    println!();
 }
