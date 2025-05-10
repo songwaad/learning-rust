@@ -1,7 +1,10 @@
 fn main() {
-    let a:u16 = 5;
-    let b:u16 = 10;
-    let is_equal:bool = a == b;
-    let is_greater:bool = b > a;
+    let t:bool = true;
+    let f:bool = false;
+
+    let result_and:bool = t && f;
+    let result_or:bool = t || f;
+    let result_not:bool = !t;
+
 
 }
