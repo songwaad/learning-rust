@@ -1,26 +1,11 @@
-fn greet() {
-    println!("Hello, world!");
-}
-
-fn print_sum(a:u16, b:u16) {
-    println!("Sum : {}, {} = {}" , a, b, a + b);
-}
-
-fn square(x:u16) -> u16 {
-    x * x
-}
-
-fn add(a:u16, b:u16) -> u16 {
-    a + b
-}
-
 fn main() {
-    greet();
-    print_sum(5, 10);
+    let number:u16 = 7;
 
-    let result:u16 = square(5);
-    println!("Square of 5 : {}", result);
-
-    let sum = add(3,  7);
-    println!("Sum of 3 and 7 = {}", sum);
+    if number < 5 {
+        println!("The number is less than 5");
+    } else if number == 5 {
+        println!("The number is qual to 5");
+    } else {
+        println!("The number is greater than 5");
+    }
 }
