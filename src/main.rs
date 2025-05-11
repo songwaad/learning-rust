@@ -1,8 +1,5 @@
 fn main() {
-    let mut number = 3;
-
-    while number != 0 {
-        println!("{}!", number);
-        number -= 1;
+    for number in 1..4 {
+        println!("The number is : {}", number);
     }
 }
