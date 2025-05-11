@@ -1,13 +1,26 @@
+fn greet() {
+    println!("Hello, world!");
+}
+
+fn print_sum(a:u16, b:u16) {
+    println!("Sum : {}, {} = {}" , a, b, a + b);
+}
+
+fn square(x:u16) -> u16 {
+    x * x
+}
+
+fn add(a:u16, b:u16) -> u16 {
+    a + b
+}
+
 fn main() {
-    for i in 0..5 {
-        println!("{}", i);
-    }
+    greet();
+    print_sum(5, 10);
 
-    println!("Break...");
+    let result:u16 = square(5);
+    println!("Square of 5 : {}", result);
 
-    for i in 0..=5 {
-        println!("{}", i);
-    }
-
-
+    let sum = add(3,  7);
+    println!("Sum of 3 and 7 = {}", sum);
 }
