@@ -1,12 +1,8 @@
 fn main() {
-    let mut count = 0;
+    let mut number = 3;
 
-    loop {
-        count += 1;
-        println!("Count is : {}", count);
-
-        if count == 5 {
-            break;
-        }
+    while number != 0 {
+        println!("{}!", number);
+        number -= 1;
     }
 }
