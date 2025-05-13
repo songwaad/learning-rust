@@ -1,10 +1,8 @@
 fn main() {
-    let result = divide(10.0, 0.0);
+    let result: Result<f64, String> = divide(10.0, 0.0);
 
-    match result {
-        Ok(value) => println!("Result: {}", value),
-        Err(e) => println!("Error: {}", e),
-    }
+    let value: f64 = result.unwrap();
+    println!("Value: {}", value);
 }
 
 fn divide(numerator: f64, denominator: f64) -> Result<f64, String> {
