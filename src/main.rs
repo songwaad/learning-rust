@@ -1,11 +1,10 @@
 fn main() {
-    let s1:String = "hello".to_string();
+    let mut s:String = "Hello".to_string();
 
-    let len:usize = calculate_length(&s1);
+    // let r1:&String = &s;
+    // let r2:&String = &s;
+    let r3:&String = &mut s;
 
-    println!("The length of '{}' is {}.", s1, len);
-}
-
-fn calculate_length(s: &String) -> usize {
-    s.len()
+    // println!("{} and {}", r1, r2);
+    println!("{}", r3);
 }
