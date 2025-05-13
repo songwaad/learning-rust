@@ -1,17 +1,6 @@
 fn main() {
-    let user1:User = User {
-        username: "username".to_string(),
-        email: "example@email.com".to_string(),
-        sign_in_count: 1,
-        active: true,
-    };
-
-    print!("Username : {}", user1.username);
+    let black:Color = Color(0,0,0);
+    print!("Black color RGB : {}, {}, {}", black.0, black.1, black.2);
 }
 
-struct User {
-    username: String,
-    email: String,
-    sign_in_count: u64,
-    active: bool,
-}
+struct Color(i32, i32, i32);
