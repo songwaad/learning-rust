@@ -1,14 +1,11 @@
 fn main() {
-    let result: Result<f64, String> = divide(10.0, 0.0);
-
-    let value: f64 = result.unwrap();
-    println!("Value: {}", value);
+    match read_file_content("example.txt") {
+        Ok(content) => println!("File content : {}", content),
+        Err(e) => println!("Error readling file: {}", e),
+    }
 }
 
-fn divide(numerator: f64, denominator: f64) -> Result<f64, String> {
-    if denominator == 0.0 {
-        Err("Cannot divivde by zero".to_string())
-    } else {
-        Ok(numerator / denominator)
-    }
+fn read_file_content(filename: &str) -> Result<String, std::io::Error> {
+    let content = std::fs::read_to_string(filename)?;
+    Ok(content)
 }
