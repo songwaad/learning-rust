@@ -1,10 +1,17 @@
 fn main() {
-    let mut s:String = "Hello".to_string();
+    let user1:User = User {
+        username: "username".to_string(),
+        email: "example@email.com".to_string(),
+        sign_in_count: 1,
+        active: true,
+    };
 
-    // let r1:&String = &s;
-    // let r2:&String = &s;
-    let r3:&String = &mut s;
+    print!("Username : {}", user1.username);
+}
 
-    // println!("{} and {}", r1, r2);
-    println!("{}", r3);
+struct User {
+    username: String,
+    email: String,
+    sign_in_count: u64,
+    active: bool,
 }
