@@ -1,11 +1,12 @@
 fn main() {
-    match read_file_content("example.txt") {
-        Ok(content) => println!("File content : {}", content),
-        Err(e) => println!("Error readling file: {}", e),
-    }
+    let result: i32 = division(5,0);
+    println!("result : {}", result);
 }
 
-fn read_file_content(filename: &str) -> Result<String, std::io::Error> {
-    let content = std::fs::read_to_string(filename)?;
-    Ok(content)
+fn division(dividend: i32, divisor: i32) -> i32 {
+    if divisor == 0 {
+        panic!("division by zero");
+    } else {
+        dividend / divisor
+    }
 }
